@@ -20,7 +20,7 @@ namespace solBase64
                 Console.WriteLine(plainTextBytes[i]);
                 Console.WriteLine(Convert.ToString(plainTextBytes[i], 2));
             }
-
+            
             base64EncodedData = Convert.ToBase64String(plainTextBytes);
             Console.WriteLine(base64EncodedData);
 
