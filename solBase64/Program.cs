@@ -10,8 +10,11 @@ namespace solBase64
     {
         static void Main(string[] args)
         {
-            string plainText = "Man";
+            string plainText = " ";
             string base64EncodedData;
+
+            Console.WriteLine("Inserisci una parola");
+            plainText = Console.ReadLine();
 
             var plainTextBytes = System.Text.Encoding.UTF8.GetBytes(plainText);
 
@@ -27,6 +30,8 @@ namespace solBase64
             var base64EncodedBytes = System.Convert.FromBase64String(base64EncodedData);
             plainText = System.Text.Encoding.UTF8.GetString(base64EncodedBytes);
             Console.WriteLine(plainText);
+
+            Console.ReadLine();
         }
     }
 }
